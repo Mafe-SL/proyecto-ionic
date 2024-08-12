@@ -9,6 +9,14 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'estudiantes',
+    loadChildren: () => import('./estudiantes/estudiantes.module').then( m => m.EstudiantesPageModule)
+  },
+  {
+    path: 'formulario-estudiantes',
+    loadChildren: () => import('./formulario-estudiantes/formulario-estudiantes.module').then( m => m.FormularioEstudiantesPageModule)
   }
 ];
 @NgModule({
